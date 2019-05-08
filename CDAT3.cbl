@@ -16,7 +16,7 @@
       *
        WORKING-STORAGE SECTION.
       *
-       01  W-WORK-DATE                       PIC S9(9) COMP.
+       01  W-WORK-DATE                       PIC S9(19) COMP.
        01  LILIAN                            PIC S9(9) COMP.
        01  CHRDATE                           PIC X(80).
 
@@ -30,7 +30,7 @@
 
        01  FC.
           10  FC-SEV                         PIC S9(4) COMP.
-          10  FC-MSG                         PIC S9(4) COMP.
+          10  FC-MSG                         PIC S9(14) COMP.
           10  FC-CTW                         PIC X.
           10  FC-FAC                         PIC XXX.
           10  FC-ISINFO                      PIC S9(9) COMP.
