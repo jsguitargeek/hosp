@@ -91,18 +91,18 @@
        01  DFHCOMMAREA.
            05  COM-TRAN-EXEC-COUNT             PIC 9999.
            05  COM-AREA-TRAN-PROGRAM.
-               10  COM-PROCESS-INDICATOR       PIC X.
+               10  COM-PROCESS-INDICATOR       PIC XX.
                10  COM-DATE-INDICATOR          PIC X.
                10  COM-DAY-DIFFERENCE          PIC 9(9).
                10  COM-DATE-FORMATTED          PIC X(29).
-               10  COM-RETIRE-INDICATOR        PIC X.
+               10  COM-RETIRE-INDICATOR        PIC XX.
                10  COM-RETIRE-DATE             PIC X(29).
                10  COM-INPUT-DATE.
                    15  COM-INPUT-DATE-CCYY     PIC X(4).
                    15  COM-INPUT-DATE-MM       PIC X(2).
                    15  COM-INPUT-DATE-DD       PIC X(2).
                10  COM-CDAT2-RETCODE           PIC 9(4).
-                   88 CDAT2-REQUEST-SUCCESS VALUE 0.
+                   88 CDAT2-REQUEST-SUCCESS VALUE -1.
 
        PROCEDURE DIVISION.
 
